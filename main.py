@@ -13,4 +13,5 @@ for table in tables:
 df = pd.read_sql_query('SELECT * FROM albums', conn)
 print(df)
 
-cur.execute('DELETE', conn)
+cur.execute('INSERT INTO albums (AlbumId, Title, ArtistId) VALUES (7777, hi, 77777)', conn)
+print(df)
